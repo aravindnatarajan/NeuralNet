@@ -1,0 +1,21 @@
+
+(c) Aravind Natarajan, Sep 2014.
+
+Neural Network code to classify objects into Quasars, White Dwarfs, and Stars.
+You need PyBrain to run this code.
+
+code/trainNeuralNetwork.py trains a NN with one hidden layer and 8 neurons.
+There are 5 input features: Magnitudes in the u,g,r,i,z bands.
+Training is done using data from data/trainingSet.dat
+The training file has 7 columns: 5 columns for u,g,r,i,z magnitudes plus redshift (only for quasars) and id (=0 for Q, 1 for W, and 2 for S).
+
+code/testNeuralNetwork.py tests the performance of the NN using data in data/testSet.dat
+
+neuralNetWeights/nn8h.xml contains the weights for the Neural Network.
+
+output/nnObjectClassification.dat contains the results with labels for each column.
+
+graphs/results.pdf shows graphs
+
+Data from the tenth data release of the SDSS
+
